@@ -1,10 +1,9 @@
 //import node stuff
-var http = require('http');
+const http = require('http');
+const displayContent = require('./route');
 
 //creates a server
-var server = http.createServer((req, res) =>    {
-    console.log("You joined Pog");
-})
+const server = http.createServer(displayContent);
 
 server.listen(3001);
 
