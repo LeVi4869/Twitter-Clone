@@ -1,24 +1,16 @@
 {
-  "name": "twitter-clone",
+  "name": "twitterclone",
   "version": "1.0.0",
-  "description": "test",
-  "main": "myApp.js",
+  "description": "",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node myApp.js",
-    "dosomething": "node myApp.js"
+    "start": "node app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LeVi4869/Twitter-Clone.git"
-  },
-  "author": "Kapp",
+  "author": "Reece Kenney",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/LeVi4869/Twitter-Clone/issues"
-  },
-  "homepage": "https://github.com/LeVi4869/Twitter-Clone#readme",
   "dependencies": {
-    "colors": "^1.4.0"
+    "express": "^4.17.1",
+    "pug": "^3.0.0"
   }
 }
