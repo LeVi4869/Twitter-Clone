@@ -1,0 +1,24 @@
+{
+  "name": "twitter-clone",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "myApp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node myApp.js",
+    "dosomething": "node myApp.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeVi4869/Twitter-Clone.git"
+  },
+  "author": "Kapp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeVi4869/Twitter-Clone/issues"
+  },
+  "homepage": "https://github.com/LeVi4869/Twitter-Clone#readme",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}
