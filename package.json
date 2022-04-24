@@ -10,8 +10,10 @@
   "author": "Reece Kenney",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "body-parser": "^1.20.0",
     "express": "^4.17.1",
+    "express-session": "^1.17.2",
     "mongodb": "^4.5.0",
     "mongoose": "^6.3.1",
     "pug": "^3.0.0"

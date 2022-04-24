@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
-const userSchema = new Schema({
+const UserSchema = new Schema({
     firstName: {
         type: String,
         required: true,
@@ -33,7 +33,7 @@ const userSchema = new Schema({
         type: String,
         default: "/images/profilePic.png"
     }
-});
+}, { timestamps: true });
 
-var user = mongoose.model('User', userSchema);
+var User = mongoose.model('User', UserSchema);
 module.exports = User;
