@@ -31,7 +31,7 @@ const profileRoute = require('./routes/profileRoutes');
 //API routes
 const postsApiRoute = require('./routes/api/posts');
 const usersApiRoute = require('./routes/api/users');
-
+ 
 app.use("/login", loginRoute);
 app.use("/register", registerRoute);
 app.use("/logout", logoutRoute);
