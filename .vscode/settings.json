@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/97e837b6-d895-4c87-b299-63e529ae0133/resourceGroups/TwitterClone-rg/providers/Microsoft.Web/sites/TwitterClone",
+    "appService.deploySubpath": "."
+}

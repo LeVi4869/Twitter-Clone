@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 4869;
+const port = process.env.PORT || 3000;
 const middleware = require('./middleware')
 const path = require('path')
 const bodyParser = require("body-parser")
@@ -81,6 +81,9 @@ io.on('connection', (socket) => {
     })
     socket.on('stop typing', room => {
         socket.in(room).emit('stop typing')
+    })
+    socket.on('notification received', room => {
+        socket.in(room).emit('notification received')
     })
 
 

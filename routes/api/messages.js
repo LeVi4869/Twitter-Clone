@@ -48,7 +48,7 @@ function insertNotifications(chat, message)  {
         if(userId == message.sender._id)    {
             return
         }
-        Notification.insertNotifications(userId, message.sender._id, 'newMessage', message.chat._id)
+        Notification.insertNotification(userId, message.sender._id, 'newMessage', message.chat._id)
     })
 }
 

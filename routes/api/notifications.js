@@ -26,6 +26,18 @@ router.get("/", async (req, res, next) => {
     })
 })
 
+router.get("/latest", async (req, res, next) => {
+    Notification.findOne({ userTo: req.session.user._id })
+    .populate('userTo')
+    .populate('userFrom')
+    .sort({ createdAt: -1 })
+    .then(results => res.status(200).send(results))
+    .catch(error => {
+        console.log(error)
+        res.sendStatus(400)
+    })
+})
+
 router.put("/:id/markAsOpened", async (req, res, next) => {
     Notification.findByIdAndUpdate(req.params.id, { opened: true })
     .then(() => res.sendStatus(204))
@@ -36,7 +48,7 @@ router.put("/:id/markAsOpened", async (req, res, next) => {
 })
 
 router.put("/markAsOpened", async (req, res, next) => {
-    Notification.updateMany({ userTo: req.session.user._id },{ opened: true })
+    Notification.updateMany({ userTo: req.session.user._id }, { opened: true })
     .then(() => res.sendStatus(204))
     .catch(error => {
         console.log(error)
